@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>QR Code Generator and Decoder</title>
+</head>
+<body>
+    <h1>QR Code Generator and Decoder</h1>
+    <h2>Generate QR Code</h2>
+    <form action="app.js" method="POST">
+        <label for="data">Enter Data:</label>
+        <input type="text" id="data" name="data" required>
+        <button type="submit">Generate QR Code</button>
+    </form>
+    <h2>Decode QR Code</h2>
+    <form action="app.js" method="POST" enctype="multipart/form-data">
+        <label for="qr_image">Upload QR Code Image:</label>
+        <input type="file" id="qr_image" name="qr_image" accept="image/*" required>
+        <button type="submit">Decode QR Code</button>
+    </form>
+</body>
+</html>
